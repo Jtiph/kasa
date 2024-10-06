@@ -1,0 +1,21 @@
+.banner {
+    width: 100%;
+    max-width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Superposition noire avec 50% d'opacité */
+     url('../assets/images/banner.webp'); /* Assure-toi que le chemin est correct */
+    background-size: cover; /* Pour que l'image couvre toute la bannière */
+    background-position: center; /* Centrer l'image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Si le texte doit être en blanc */
+    margin-bottom: 2rem;
+}
+
+.banner__title{
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoute une ombre pour améliorer la lisibilité du texte */
+}

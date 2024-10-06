@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    padding: 2rem;
+}
+
+.navbar__logo img {
+    height: 40px; /* Ajuste la taille du logo selon ton besoin */
+}
+
+.navbar__links {
+    display: flex;
+    gap: 2rem; /* Espace entre les liens */
+    cursor: pointer;
+   
+}
+
+.navbar__links-item{
+    color: black;
+    text-decoration: none;
+}
+

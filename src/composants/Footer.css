@@ -1,0 +1,35 @@
+.footer {
+    background-color: black; /* Couleur de fond noire */
+    width: 100%; /* Prend toute la largeur de l'écran */
+    padding: 20px; /* Espace intérieur pour le footer */
+    position: relative; /* Positionnement relatif */
+    bottom: 0; /* Colle le footer en bas */
+    text-align: center; /* Centre le texte */
+    opacity: 1; /* Rendre le footer visible */
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Alignement vertical */
+    align-items: center; /* Centre le contenu horizontalement */
+    gap: 2rem;
+  }
+  
+  .footer-logo {
+    width: 100%;
+    max-width: 122px;
+    height: 39.44px;
+    margin: 0; /* Pas de marge autour */
+    filter: brightness(0) invert(1); /* Inverser les couleurs pour passer au blanc */
+  }
+  
+  .footer-text {
+    color: white; /* Couleur du texte pour les droits d'auteur */
+    margin-top: 10px; /* Espace au-dessus du texte */
+    font-size: 20px; /* Taille du texte pour les droits d'auteur */
+  }
+  
