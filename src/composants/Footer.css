@@ -1,7 +1,6 @@
 .footer {
     background-color: black; /* Couleur de fond noire */
     width: 100%; /* Prend toute la largeur de l'écran */
-    padding: 20px; /* Espace intérieur pour le footer */
     position: relative; /* Positionnement relatif */
     bottom: 0; /* Colle le footer en bas */
     text-align: center; /* Centre le texte */
