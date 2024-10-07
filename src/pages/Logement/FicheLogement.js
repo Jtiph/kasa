@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from '../composants/Navbar';
-import Footer from "../composants/Footer";
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from "../../components/Footer/Footer";
 
 function FicheLogement() {
     return(

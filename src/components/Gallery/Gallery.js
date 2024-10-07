@@ -1,8 +1,8 @@
 import React from "react";
-import "./Gallery.css";
+import "./Gallery.scss";
 import { Link } from "react-router-dom";
-import logements from "../data/logements.json";
-import Card from "../composants/Card";
+import logements from "../../data/logements.json";
+import Card from "../Card/Card";
 
 const Gallery = () => {
     return (

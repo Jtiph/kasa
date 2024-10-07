@@ -1,12 +1,13 @@
 import React from 'react';
-import Navbar from '../composants/Navbar';
-import Banner from "../composants/Banner";
-import bannerAboutImage from '../assets/images/banner-about.webp';
-import Footer from "../composants/Footer";
-import Dropdown from '../composants/dropdown';
-import data from "../data/dropdownData.json";
+import Navbar from '../../components/Navbar/Navbar';
+import Banner from "../../components/Banner/Banner";
+import bannerAboutImage from '../../assets/images/banner-about.webp';
+import Footer from "../../components/Footer/Footer";
+import Dropdown from '../../components/Dropdown/dropdown';
+import data from "../../data/dropdownData.json";
+import './About.scss';
 
-const AboutPage = () => {
+const About = () => {
   return (
     <div>
       <header>
@@ -25,4 +26,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;
