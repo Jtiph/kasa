@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./dropdown.css"; 
 
 const Dropdown = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +8,7 @@ const Dropdown = ({ title, content }) => {
   };
 
   return (
-    <div className="dropdown__container" >
+    <div className="dropdown" >
       <div className="dropdown__title" onClick={toggleDropdown}>
         <h2>{title}</h2>
         <span className="arrow-icon">

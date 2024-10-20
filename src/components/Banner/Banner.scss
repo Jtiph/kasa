@@ -1,0 +1,47 @@
+/* src/components/Banner.css */
+.banner {
+    width: 100%;
+    max-width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    background-size: cover; /* Pour que l'image couvre toute la bannière */
+    background-position: center; /* Centrer l'image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Si le texte doit être en blanc */
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+    &__overlay {
+        position: absolute; /* Superpose l'overlay par-dessus l'image */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4); /* Fond noir avec une opacité de 40% */
+        z-index: 1; /* Positionne l'overlay derrière le texte mais au-dessus de l'image */
+    }
+    
+    &__title {
+        position: relative;
+        z-index: 2; /* Le texte au-dessus de l'overlay */
+        font-size: 48px;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoute une ombre pour améliorer la lisibilité du texte */
+        @media screen and (max-width: 780px) {
+            font-size: 24px;
+            width: 100%;
+            max-width: 245px;
+            padding-left: 1rem;
+        }
+    }
+    @media screen and (max-width: 780px) {
+        height: 111px;
+        margin: 1.5rem auto;
+        justify-content: left;
+        max-width: 100%;
+    }
+  
+}
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Banner from "../../components/Banner/Banner";
-import bannerAboutImage from '../../assets/images/banner-about.webp';
+import bannerAboutImage from '../../assets/images/banner/banner-about.webp';
 import Footer from "../../components/Footer/Footer";
 import Dropdown from '../../components/Dropdown/dropdown';
 import data from "../../data/dropdownData.json";
@@ -13,7 +13,7 @@ const About = () => {
       <header>
         <Navbar/>
       </header>
-      <main>
+      <main className='main-container'>
       <div className='container'><Banner image={bannerAboutImage}/></div>
       <div className="dropdown__wrapper">
       {data.map((item, index) => (

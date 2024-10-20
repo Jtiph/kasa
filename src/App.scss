@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Inclure les paddings et les bordures dans la largeur totale */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;  /* Assurer que le body prend toute la largeur */
+  height: 100%;
+  overflow-x: hidden;  /* Empêche tout débordement horizontal */
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.main-container {
+  width: 100vw; /* Utiliser 100% de la largeur du viewport */
+  margin: 0;
+  padding: 20px;
+  
+  /* Pour mobile */
+  @media screen and (max-width: 780px) {
+    padding: 10px;
+  }
+}
