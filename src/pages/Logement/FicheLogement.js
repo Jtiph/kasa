@@ -6,7 +6,7 @@ import './FicheLogement.scss';
 
 function FicheLogement() {
     return(
-        <div>
+        <div className="ficheLogement-wrapper">
             <div>
                 <header>
                     <Navbar/>

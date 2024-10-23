@@ -1,7 +1,6 @@
 /* src/components/Banner.css */
 .banner {
     width: 100%;
-    max-width: 1240px;
     height: 223px;
     border-radius: 25px;
     background-size: cover; /* Pour que l'image couvre toute la bannière */
@@ -29,14 +28,14 @@
         font-size: 48px;
         font-weight: 700;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoute une ombre pour améliorer la lisibilité du texte */
-        @media screen and (max-width: 780px) {
+        @media screen and (max-width: 768px) {
             font-size: 24px;
             width: 100%;
             max-width: 245px;
             padding-left: 1rem;
         }
     }
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
         height: 111px;
         margin: 1.5rem auto;
         justify-content: left;

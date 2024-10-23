@@ -1,29 +1,38 @@
 .card {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    margin: 2rem auto;
+
+    @media screen and (max-width: 768px) {
+        width: 100%; /* Prend toute la largeur de l'écran sur mobile */
+        max-width: 100%;
+        margin: 0.5rem 0;
+    }
+
     &__img {
-        width: 100%;
+        width: 340px; 
         height: 340px; 
-        max-width: 340px;
-        object-fit: cover;
+        max-width: 100%; 
+        object-fit: cover; 
         border-radius: 10px;
-        @media screen and (max-width: 780px) {
-            max-width: 335px;
-            max-height: 255px;
-            margin: 0.5rem 0;
+
+        @media screen and (max-width: 768px) {
+            max-width: 100%; 
+            width: 780px; 
+            height: 255px; 
         }
     }
-    
+
     &__title {
         position: absolute;
         bottom: 10px;
         left: 10px;
-        color: white; /* Couleur du texte */
+        color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        padding: 5px 10px; /* Espacement autour du texte */
+        padding: 5px 10px;
         font-size: 15px;
-        font-weight: 500;
     }
 }
-
-

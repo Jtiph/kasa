@@ -7,9 +7,15 @@ import './Error.scss'
 const Error = () => {
   return (
     <div>
-      <Navbar/>
-      <NoPage/>
-      <Footer/>
+      <header>
+        <Navbar />
+      </header>
+      <div className='main-container'>
+        <NoPage />
+      </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

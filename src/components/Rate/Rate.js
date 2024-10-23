@@ -7,7 +7,7 @@ function Rate(props) {
       const score = props.score;
     const notes = [1, 2, 3, 4, 5];
     return (
-      <div className="rating">
+      <div className="rate">
         {notes.map((note) =>
           score >= note ? (
             <img

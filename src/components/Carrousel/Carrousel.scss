@@ -9,6 +9,9 @@
     .active{
         opacity: 1;
     }
+    @media screen and (max-width: 768px) {
+       height: 255px;
+    }
 }
 .slider{
     bottom: 0;
@@ -28,6 +31,9 @@
         left: 48%;
         position: absolute;
         top: 86%;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 }
 .slider img{
@@ -51,7 +57,14 @@
     left: 2%;
     top: 25%;
     z-index: 10;
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+        top: 42%;
+        cursor: auto;
+
+    }
 }
+
 .right-arrow{
     color: white;
     cursor: pointer;
@@ -62,5 +75,10 @@
     right: 2%;
     top: 25%;
     z-index: 10;
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+        top: 42%;
+        cursor: none;
+    }
 
 }

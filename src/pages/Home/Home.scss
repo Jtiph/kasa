@@ -7,13 +7,16 @@
     padding:40px 15px; /* Espacement intérieur */
     border-radius: 25px; /* Coins arrondis pour le fond */
     max-width: 1240px;
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr); /* 1 colonne sur mobile */
         margin: 1.5rem auto;
         padding: 10px;
         max-width: 100%;
         background-color: transparent;
         grid-gap: 1px;
+    }
+    @media screen and (min-device-width : 769px) and (max-device-width : 1024px){
+        grid-template-columns: repeat(2,1fr);
     }
 
    

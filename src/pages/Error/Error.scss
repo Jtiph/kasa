@@ -1,29 +1,40 @@
-.error{
+.error {
     width: 100%;
     color: #FF6060;
-    &__title{
+
+    &__title {
         height: auto;
         font-size: 288px;
         display: flex;
         justify-content: center;
         margin: 0;
-        }
-        &__subtitle{
-            font-size: 36px;
-            display: flex;
-            justify-content: center;
+        @media screen and (max-width: 768px) {
+            font-size: 96px;
             margin: 6rem 0;
-        
         }
-        &__link{
+    }
+
+    &__subtitle {
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        margin: 6rem 0;
+
+        @media screen and (max-width: 768px) {
             font-size: 18px;
-            display: flex;
-            justify-content: center;
-            margin: 6rem 0;
-            text-decoration: none;
-            color: black;
+            text-align: center;
         }
+
+    }
+
+    &__link {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        margin: 6rem 0;
+        color: black;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
 }
-
-
-

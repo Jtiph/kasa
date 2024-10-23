@@ -1,29 +1,79 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box; /* Inclure les paddings et les bordures dans la largeur totale */
+  box-sizing: border-box;
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;  /* Assurer que le body prend toute la largeur */
+  width: 100%;
   height: 100%;
-  overflow-x: hidden;  /* Empêche tout débordement horizontal */
+  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 .main-container {
-  width: 100vw; /* Utiliser 100% de la largeur du viewport */
-  margin: 0;
-  padding: 20px;
-  
+  width: 100vw;
+  padding: 1.5rem 6rem;
+
   /* Pour mobile */
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 768px) {
     padding: 10px;
+  }
+}
+
+/* Footer styling */
+.footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Pousse le contenu vers le bas */
+  padding: 1rem 0;
+  margin-top: auto;
+
+  @media screen and (max-width: 768px) {
+      justify-content: center;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centré dans le footer */
+  gap: 2rem;
+  height: auto;
+
+  @media screen and (max-width: 768px) {
+      gap: 0;
+  }
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 122px;
+  height: 39.44px;
+  filter: brightness(0) invert(1); /* Inverse les couleurs de l'image */
+}
+
+.footer-text {
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+
+  @media screen and (max-width: 768px) {
+      font-size: 12px;
+      white-space: wrap;
+      width: 131px;
   }
 }

@@ -23,32 +23,34 @@ const DisplayLogement = () => {
                 {/* Titre */}
                 <div className='description__title'>
                     <h1 className='description__title-logement'>{logement.title}</h1>
-                     {/* localisation */}
+                    {/* localisation */}
                     <p className='description__title-location'>{logement.location}</p>
+                     {/* Liste des tags */}
+                <div className='tags'>
+                    {logement.tags.map((tag, index) => (
+                        <span key={index} className='tag'>
+                            {tag}
+                        </span>
+                    ))}
                 </div>
-                 <div className='information__hote'>
-                     {/* Informations sur l'hôte */}
-                    <span className='information__hote-name'>{logement.host.name}</span>
-                    <img className='information__hote-img' src={logement.host.picture} alt={logement.host.name} />
-                 </div>
-            </div>
-           
-                <div className='tags-rating'>
-                    {/* Liste des tags */}
-                     <div className='tags'>
-                        {logement.tags.map((tag, index) => (
-                            <span key={index} className='tag'>
-                                {tag}
-                            </span>
-                        ))}
+                </div>
+                <div className='information__hote'>
+                    {/* Informations sur l'hôte */}
+                    <div className='information__hote-nameImg'>
+                        <span className='information__hote-name'>{logement.host.name}</span>
+                        <img className='information__hote-img' src={logement.host.picture} alt={logement.host.name} />
                     </div>
+                    <div className='description__hote-rating'>
                         <Rate score={logement.rating} />
+                    </div>
                 </div>
+
+            </div>
 
             <div className='dropdown__logement'>
                 {/* Description du logement */}
                 <div className="dropdown__logement-description">
-                    <Dropdown  title="Description" content={<p>{logement.description}</p>}/>
+                    <Dropdown title="Description" content={<p>{logement.description}</p>} />
                     {/* Liste des équipements */}
                 </div>
                 <div className="dropdown__logement-equipement">
@@ -65,7 +67,7 @@ const DisplayLogement = () => {
                 </div>
             </div>
 
-            
+
         </div>
     );
 };
