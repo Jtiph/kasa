@@ -29,6 +29,57 @@ body {
   }
 }
 
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  padding: 1.5rem 6rem;
+  @media screen and (max-width: 768px) {
+      width: 100%;
+      min-width: 335px;
+      padding: 1rem;
+  }
+}
+
+.navbar__logo img {
+  font-size: 40px;
+  @media screen and (max-width: 768px) {
+      min-width: 124px;
+      height: 36.88px;
+  }
+}
+
+/* Navbar styling */
+.navbar__links {
+  display: flex;
+  gap: 2rem; /* Espace entre les liens */
+  cursor: pointer;
+  @media screen and (max-width: 768px) {
+      gap: 1rem;
+      padding-right: 0.5rem;
+      cursor: none;
+  }
+ 
+}
+
+.navbar__links-item{
+  color: black;
+  text-decoration: none;
+  &:hover{
+      text-decoration: underline;
+  }
+  @media screen and (max-width: 768px) {
+      font-size: 12px;
+      text-transform: uppercase;
+      &:active{
+          text-decoration: underline;
+      }
+  }
+}
+
+
+
 /* Footer styling */
 .footer {
   background-color: black;
