@@ -5,11 +5,9 @@ import './FicheLogement.scss';
 function FicheLogement() {
     return(
         <div className="ficheLogement-wrapper">
-            <div>
                 <main className="ficheLogement-container">
                     <DisplayLogement/>
                 </main>
-            </div>
         </div>
     )
 }

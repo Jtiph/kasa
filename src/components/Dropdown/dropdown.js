@@ -20,7 +20,7 @@ const Dropdown = ({ title, content }) => {
           )}
         </span>
       </div>
-      {isOpen && <div className="dropdown__content"><p>{content}</p></div>}
+      {isOpen && <div className="dropdown__content"><div>{content}</div></div>}
     </div>
   );
 };
