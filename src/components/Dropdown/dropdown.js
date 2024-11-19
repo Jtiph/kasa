@@ -9,9 +9,9 @@ const Dropdown = ({ title, content }) => {
 
   return (
     <div className="dropdown" >
-      <div className="dropdown__title" onClick={toggleDropdown}>
+      <div className="dropdown__title" >
         <h2>{title}</h2>
-        <span className="arrow-icon">
+        <span className="arrow-icon" onClick={toggleDropdown}>
             
           {isOpen ? (
             <i className="fa-solid fa-chevron-up"></i>
@@ -20,7 +20,7 @@ const Dropdown = ({ title, content }) => {
           )}
         </span>
       </div>
-      {isOpen && <div className="dropdown__content"><p>{content}</p></div>}
+      {isOpen && <div className="dropdown__content"><div>{content}</div></div>}
     </div>
   );
 };

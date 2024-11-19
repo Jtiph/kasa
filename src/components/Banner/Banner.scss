@@ -1,4 +1,3 @@
-/* src/components/Banner.css */
 .banner {
     width: 100%;
     height: 223px;
@@ -8,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Si le texte doit être en blanc */
+    color: white; 
     margin: 2rem auto;
     position: relative;
     overflow: hidden;
@@ -18,7 +17,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.4); /* Fond noir avec une opacité de 40% */
+        background-color: rgba(0, 0, 0, 0.4); 
         z-index: 1; /* Positionne l'overlay derrière le texte mais au-dessus de l'image */
     }
     
