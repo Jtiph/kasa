@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo/logo.png';
 import './Navbar.scss';
 
@@ -10,8 +10,8 @@ function Navbar() {
                 <img src={logo} alt="logo kasa"/>
             </div>
             <div className="navbar__links">
-                <Link to="/" className="navbar__links-item">Accueil</Link>
-                <Link to="/about" className="navbar__links-item">À propos</Link>
+                <NavLink to="/" className="navbar__links-item">Accueil</NavLink>
+                <NavLink to="/about" className="navbar__links-item">À propos</NavLink>
             </div>
         </nav>
     )
