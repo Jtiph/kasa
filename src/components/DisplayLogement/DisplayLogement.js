@@ -9,6 +9,7 @@ const DisplayLogement = () => {
     const { id } = useParams(); // Récupère l'ID du logement à partir de l'URL
     const logement = logements.find((item) => item.id === id); // Cherche le logement correspondant à l'ID
 
+    //l'exclamation devant pour dire que logement est falsy
     if (!logement) {
         // Si le logement n'est pas trouvé
         return <Navigate to="*" />;
